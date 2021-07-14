@@ -63,6 +63,7 @@ public class Ex01_Array_Basic {
         String resultArray = Arrays.toString(score);
         System.out.println(resultArray);
 
+        //----------------------------------------------------------------------
         //입사시험
         //12, 8,1,20
         //낮은 값 순으로 출력
@@ -83,7 +84,7 @@ public class Ex01_Array_Basic {
         for (int i : score2) {
             System.out.printf("%d ",i);
         }
-
+//-----------------------------------------------------------------------------------
         //Today Point
         //암기
         //배열 생성 방법 3가지
