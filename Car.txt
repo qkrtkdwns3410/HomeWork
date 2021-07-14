@@ -1,0 +1,6 @@
+class Car{
+	public statice void main(String[] args){
+		System.out.println("my car");
+	}
+
+}
