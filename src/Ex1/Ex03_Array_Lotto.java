@@ -35,6 +35,7 @@ public class Ex03_Array_Lotto {
 
             lotto[i] = num;
 
+            //중복값 비교하는 것 >>그림그리기 과제입니다.
             for (int j = 0; j < i; j++) {
 
                 while (lotto[i] == lotto[j]) {
