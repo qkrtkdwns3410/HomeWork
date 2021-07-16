@@ -51,7 +51,7 @@ public class Ex07_Array_method_Param {
         OverTest ot = new OverTest();
         int result = ot.add(10, 20);
         System.out.println("result : " + result);
-
+        System.out.println("---------------------------------------------------------------");
         Human h = new Human();
         h.name = "슈퍼맨";
         ot.objectAdd(h);
@@ -68,11 +68,15 @@ public class Ex07_Array_method_Param {
 
         int[] plus1 = new int[]{10, 20, 30, 40, 50, 70, 80};
         int[] plus2 = new int[]{20, 30, 40, 50, 60};
+
         int[] plus3 = ot.arrAdd2(plus1, plus2);
 
         for (int i : plus3) {
             System.out.println(i);
         }
+        System.out.println("---------------------------------------------------------------");
+
+
     }
 
 }

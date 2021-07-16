@@ -26,13 +26,17 @@ public class Ex05_Array_Object {
         p.name = "홍길동";
         p.age = 100;
         //사람을 3명을 만드세요.
-        Person[] personarr = new Person[3];
+        Person[] personarr = new Person[3]; //방을 만들기
+
         //heap 3개의 방 ... 각각의 방은 Person 이라는 하는 타입을 가지는 객체에 주소를 담을 수 있는 것 뿐입니다.
         System.out.println("personarr: " + personarr);
         System.out.println("personarr[0] : " + personarr[0]);
 
 
         //방에는 주소값 >> Person 타입의 주소값(new)
+
+        //방을 채우기!
+
         personarr[0] = new Person();
         personarr[1] = new Person();
 
@@ -55,8 +59,11 @@ public class Ex05_Array_Object {
 
         }
         System.out.println("---------------------------------------------------------------");
+
         //2. int[] arr=  new int[]{1,2,3}
         Person[] parray2 = new Person[]{new Person(), new Person(), new Person()};
+
+        System.out.println("---------------------------------------------------------------");
 
         //3. int[] arr = {1,2,3}
         Person[] parray3 = {new Person(), new Person(), new Person()};
@@ -65,6 +72,16 @@ public class Ex05_Array_Object {
     }
 
 }
+
+/*
+
+Person[] parray1 = new Person[3];
+
+Person[] parray2 = new Person[]{new Person(),new Person(),new Person()}
+
+Person[] parray3 = {new Person(),new Person(),new Person()};
+
+ */
 
 
 
