@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/../Ex02_Scope_Location/Ex02_Scope_Location.iml" filepath="$PROJECT_DIR$/../Ex02_Scope_Location/Ex02_Scope_Location.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Ex03_OOP_Basic/Ex03_OOP_Basic.iml" filepath="$PROJECT_DIR$/../Ex03_OOP_Basic/Ex03_OOP_Basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ex04_Array.iml" filepath="$PROJECT_DIR$/Ex04_Array.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../HomeWordk/HomeWordk.iml" filepath="$PROJECT_DIR$/../HomeWordk/HomeWordk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../tools/git/git.iml" filepath="$PROJECT_DIR$/../../../../tools/git/git.iml" />
     </modules>
   </component>
 </project>
