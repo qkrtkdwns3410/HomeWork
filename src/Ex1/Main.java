@@ -1,32 +1,40 @@
 package Ex1;
 
+import javax.swing.table.TableCellRenderer;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        boolean[] check = new boolean[10001]; //1부터 10000
 
-        Scanner sc = new Scanner(System.in);
-        int count = sc.nextInt(); //count 값을 받습니다. =5
-        int[] arr = new int[count];
+        for (int i = 1; i < 10000; i++) {
 
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = sc.nextInt();
-        }
-
-        int max = arr[0];
-        int min = arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            if (max < arr[i]) {
-                max = arr[i];
-
-            }
-            if (min > arr[i]) {
-                min = arr[i];
+            int n = d(i); //sum 값이 n에 담깁니다.
+            if (n < 10001) {//10000이 넘는 수는 필요없습니다.
+                check[n] = true;
             }
         }
-        System.out.println(max);
-        System.out.println(min);
+
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 1; i < 10001; i++) {
+            if (!check[i]) { //false인 인덱스만 출력합니다.
+                sb.append(i).append('\n');
+
+            }
+        }
+        System.out.println(sb);
+
     }
 
+    public static int d(int num) {
+        int sum = num;
+
+        while (num != 0) {
+            sum = sum + (num % 10); //첫째 자리수.
+            num /= 10; //10을 나누어 첫 째의 자리를 없앱니다.
+        }
+        return sum;
+    }
 }
 
