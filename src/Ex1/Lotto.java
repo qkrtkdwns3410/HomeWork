@@ -8,7 +8,7 @@ public class Lotto {
     }
 
 
-    public  void bubbleSort() {
+    public void bubbleSort() {
 
         for (int i = 0; i < lo.length - 1; i++) {
 
